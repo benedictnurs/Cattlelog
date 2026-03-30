@@ -1,0 +1,36 @@
+[
+  [
+    {
+      "course": {
+        "subjectCode": "MAT",
+        "courseNum": "021C",
+        "title": "Calculus III",
+        "unitsLow": 4
+      },
+      "instructor": [
+        { "fullName": "Dr. Jane Doe" }
+      ],
+      "icmsData": {
+        "newDescription": "Vector calculus: multivariable differentiation and integration.",
+        "ge3": "QA GE",
+        "prereq": "MAT21B"
+      }
+    },
+    {
+      "course": {
+        "subjectCode": "ECS",
+        "courseNum": "140A",
+        "title": "Programming Languages",
+        "unitsLow": 4
+      },
+      "instructor": [
+        { "fullName": "Prof. John Smith" }
+      ],
+      "icmsData": {
+        "newDescription": "Principles of programming languages and paradigms.",
+        "ge3": "SE GE",
+        "prereq": "ECS60"
+      }
+    }
+  ]
+]

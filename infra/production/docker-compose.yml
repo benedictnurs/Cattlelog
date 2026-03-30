@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  frontend:
+    image: cattlelog-frontend:latest
+    container_name: cattlelog-frontend
+    restart: unless-stopped
+    environment:
+      - VITE_POSTHOG_KEY=${VITE_POSTHOG_KEY}
+      - VITE_POSTHOG_HOST=${VITE_POSTHOG_HOST}
+      - VITE_API_BASE_URL=${VITE_API_BASE_URL}
+      - VITE_API_ALL_COURSES_URL=${VITE_API_ALL_COURSES_URL}
+    networks:
+      - cattlelog-network
+
+  backend:
+    image: cattlelog-backend:latest
+    container_name: cattlelog-backend
+    restart: unless-stopped
+    environment:
+      - PORT=5000
+      - DB_HOST=${DB_HOST}
+      - DB_NAME=${DB_NAME}
+      - DB_PASSWORD=${DB_PASSWORD}
+      - DB_USER=${DB_USER}
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY}
+      - POSTHOG_API_KEY=${POSTHOG_API_KEY}
+      - REDIS_URL=${REDIS_URL}
+    networks:
+      - cattlelog-network
+    volumes:
+      - /opt/cattlelog/shared-data:/app/shared_data:ro
+
+  neptune:
+    image: cattlelog-neptune:latest
+    container_name: cattlelog-neptune
+    restart: unless-stopped
+    networks:
+      - cattlelog-network
+
+networks:
+  cattlelog-network:
+    name: cattlelog-network
+    driver: bridge

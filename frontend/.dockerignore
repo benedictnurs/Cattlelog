@@ -1,0 +1,23 @@
+# Dependencies
+node_modules
+
+# Build output (we build fresh in Docker)
+dist
+
+# Development files
+.git
+.gitignore
+*.md
+.vscode
+.idea
+
+# Environment files
+.env.local
+.env.*.local
+
+# Testing
+coverage
+
+# Misc
+.DS_Store
+

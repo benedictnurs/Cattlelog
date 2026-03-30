@@ -1,0 +1,14 @@
+uvicorn
+fastapi
+psycopg2
+SQLAlchemy
+numpy
+pgvector
+starlette
+posthog
+redis[hiredis]
+gunicorn
+uvicorn
+uvloop
+httptools
+kronicler

@@ -1,0 +1,37 @@
+[
+  {
+    "id": "P123",
+    "professor_name": "Dr. Jane Doe",
+    "profile_url": "https://example.edu/jane-doe",
+    "department": "Mathematics",
+    "number_of_ratings": "12",
+    "overall_rating": "4.5",
+    "would_take_again_percentage": "85%",
+    "level_of_difficulty": "2.3",
+    "classes": ["MAT21C"],
+    "reviews": [
+      {
+        "course": "MAT21C",
+        "professor": "Dr. Jane Doe",
+        "quality_rating": "5",
+        "difficulty_rating": "2",
+        "review": "Clear lectures and fair exams.",
+        "tags": ["Clear grading", "Caring", "Inspirational"],
+        "date": "2024-05-01",
+        "grade": "A-"
+      }
+    ]
+  },
+  {
+    "id": "P456",
+    "professor_name": "Prof. John Smith",
+    "profile_url": "https://example.edu/john-smith",
+    "department": "Computer Science",
+    "number_of_ratings": "8",
+    "overall_rating": "3.9",
+    "would_take_again_percentage": "70%",
+    "level_of_difficulty": "3.1",
+    "classes": ["ECS140A", "MAT21C"],
+    "reviews": []
+  }
+]

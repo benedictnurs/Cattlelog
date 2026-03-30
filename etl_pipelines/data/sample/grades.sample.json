@@ -1,0 +1,22 @@
+{
+  "Dr. Jane Doe": {
+    "classes": [
+      {
+        "course": "MAT21C",
+        "quarter": "2024F",
+        "enrolled": "180",
+        "grades": { "A": "60", "A-": "20", "B+": "30", "B": "40", "B-": "20", "C+": "10", "C": "0", "D": "0", "F": "0" }
+      }
+    ]
+  },
+  "Prof. John Smith": {
+    "classes": [
+      {
+        "course": "ECS140A",
+        "quarter": "2024F",
+        "enrolled": "120",
+        "grades": { "A": "20", "A-": "10", "B+": "25", "B": "30", "B-": "15", "C+": "10", "C": "5", "D": "3", "F": "2" }
+      }
+    ]
+  }
+}

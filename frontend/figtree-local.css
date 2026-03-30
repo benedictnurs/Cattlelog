@@ -1,0 +1,64 @@
+/* latin-ext */
+@font-face {
+  font-family: "Figtree";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/fonts/figtree/_Xms-HUzqDCFdgfMm4q9DbZs.woff2") format("woff2");
+}
+/* latin */
+@font-face {
+  font-family: "Figtree";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/fonts/figtree/_Xms-HUzqDCFdgfMm4S9DQ.woff2") format("woff2");
+}
+/* latin-ext */
+@font-face {
+  font-family: "Figtree";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/figtree/_Xms-HUzqDCFdgfMm4q9DbZs.woff2") format("woff2");
+}
+/* latin */
+@font-face {
+  font-family: "Figtree";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/figtree/_Xms-HUzqDCFdgfMm4S9DQ.woff2") format("woff2");
+}
+/* latin-ext */
+@font-face {
+  font-family: "Figtree";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/figtree/_Xms-HUzqDCFdgfMm4q9DbZs.woff2") format("woff2");
+}
+/* latin */
+@font-face {
+  font-family: "Figtree";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/fonts/figtree/_Xms-HUzqDCFdgfMm4S9DQ.woff2") format("woff2");
+}
+/* latin-ext */
+@font-face {
+  font-family: "Figtree";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/figtree/_Xms-HUzqDCFdgfMm4q9DbZs.woff2") format("woff2");
+}
+/* latin */
+@font-face {
+  font-family: "Figtree";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/figtree/_Xms-HUzqDCFdgfMm4S9DQ.woff2") format("woff2");
+}

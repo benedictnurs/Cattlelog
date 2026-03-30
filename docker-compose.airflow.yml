@@ -1,0 +1,110 @@
+version: '3.8'
+
+services:
+  postgres-airflow:
+    image: postgres:13
+    container_name: airflow-postgres
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    volumes:
+      - postgres-airflow-volume:/var/lib/postgresql/data
+    networks:
+      - airflow-network
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "airflow"]
+      interval: 5s
+      retries: 5
+
+  airflow-init:
+    build:
+      context: ./etl_pipelines
+      dockerfile: Dockerfile
+    image: cattlelog-airflow:latest
+    container_name: airflow-init
+    depends_on:
+      - postgres-airflow
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__CORE__FERNET_KEY: ""
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres-airflow/airflow
+      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+      AIRFLOW__LOGGING__BASE_LOG_FOLDER: /opt/airflow/logs
+      AIRFLOW__LOGGING__REMOTE_LOGGING: "false"
+      _AIRFLOW_DB_MIGRATE: "true"
+      _AIRFLOW_WWW_USER_CREATE: "true"
+      _AIRFLOW_WWW_USER_USERNAME: admin
+      _AIRFLOW_WWW_USER_PASSWORD: admin
+    volumes:
+      - ./etl_pipelines:/opt/airflow/dags
+      - ./etl_pipelines/data:/opt/airflow/data
+      - airflow-logs:/opt/airflow/logs
+    networks:
+      - airflow-network
+    entrypoint: /bin/bash
+    command:
+      - -c
+      - |
+        airflow db migrate
+        airflow users create --username admin --password admin --firstname Admin --lastname User --role Admin --email admin@example.com || true
+        exit 0
+
+  webserver:
+    build:
+      context: ./etl_pipelines
+      dockerfile: Dockerfile
+    image: cattlelog-airflow:latest
+    container_name: airflow-webserver
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__CORE__FERNET_KEY: ""
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres-airflow/airflow
+      AIRFLOW__WEBSERVER__SECRET_KEY: "a7f8c3b2e9d4f6a1c8b5e2d7f9a3c6b8e1d4f7a2c5b8e1d3f6a9c2b5e8d1f4a7c3"
+      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+      AIRFLOW__LOGGING__BASE_LOG_FOLDER: /opt/airflow/logs
+      AIRFLOW__LOGGING__REMOTE_LOGGING: "false"
+    volumes:
+      - ./etl_pipelines:/opt/airflow/dags
+      - ./etl_pipelines/data:/opt/airflow/data
+      - airflow-logs:/opt/airflow/logs
+    ports:
+      - "8080:8080"
+    networks:
+      - airflow-network
+    command: webserver
+
+  scheduler:
+    build:
+      context: ./etl_pipelines
+      dockerfile: Dockerfile
+    image: cattlelog-airflow:latest
+    container_name: airflow-scheduler
+    depends_on:
+      airflow-init:
+        condition: service_completed_successfully
+    environment:
+      AIRFLOW__CORE__EXECUTOR: LocalExecutor
+      AIRFLOW__CORE__FERNET_KEY: ""
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@postgres-airflow/airflow
+      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+      AIRFLOW__LOGGING__BASE_LOG_FOLDER: /opt/airflow/logs
+      AIRFLOW__LOGGING__REMOTE_LOGGING: "false"
+    volumes:
+      - ./etl_pipelines:/opt/airflow/dags
+      - ./etl_pipelines/data:/opt/airflow/data
+      - airflow-logs:/opt/airflow/logs
+    networks:
+      - airflow-network
+    command: scheduler
+
+networks:
+  airflow-network:
+    driver: bridge
+
+volumes:
+  postgres-airflow-volume:
+  airflow-logs:

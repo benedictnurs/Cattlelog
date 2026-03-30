@@ -1,0 +1,10 @@
+__pycache__/
+ai_summarization/
+data_pipelines/
+database_management/
+sentiment_analysis/
+sql_pipelines/
+venv/
+README.md
+tests/
+requirements-full.txt

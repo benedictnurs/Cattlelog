@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* All colors MUST be HSL. */
+
+@layer base {
+  :root {
+    /* Base colors from design system */
+    --background: 0 0% 100%;
+    --foreground: 0 0% 9%; /* #181818 */
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 9%;
+    --card-border: 0 0% 90%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 9%;
+
+    /* Primary: Dark blue from design system */
+    --primary: 204 57% 19%; /* #15374D */
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary: Light blue accent */
+    --secondary: 204 54% 59%; /* #5FA3CF */
+    --secondary-foreground: 0 0% 100%;
+
+    /* Muted gray from design system */
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 48%; /* #7B7B7B */
+
+    /* Accent: UC Davis colors */
+    --accent: 204 54% 59%; /* Light blue */
+    --accent-foreground: 0 0% 100%;
+
+    /* Status colors from design system */
+    --success: 122 39% 40%; /* #3E8D40 */
+    --success-foreground: 0 0% 100%;
+
+    --warning: 43 76% 57%; /* #E4B43D */
+    --warning-foreground: 0 0% 9%;
+
+    --destructive: 5 71% 58%; /* #E05346 */
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 96%;
+    --ring: 204 57% 19%;
+
+    --radius: 0.5rem;
+
+    /* Typography scale from design system */
+    --font-heading-1: 800; /* ExtraBold */
+    --font-heading-2: 600; /* Bold */
+    --font-subheading: 600; /* Bold */
+    --font-body: 400; /* Regular */
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 0 0% 9%;
+    --foreground: 0 0% 100%;
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 100%;
+    --card-border: 0 0% 20%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 60%;
+    --border: 0 0% 20%;
+    --input: 0 0% 15%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+    font-family:
+      'Figtree',
+      system-ui,
+      -apple-system,
+      sans-serif;
+  }
+
+  /* Typography classes following design system */
+  .heading-1 {
+    font-weight: var(--font-heading-1);
+    @apply text-2xl leading-tight;
+  }
+
+  .heading-2 {
+    font-weight: var(--font-heading-2);
+    @apply text-xl leading-tight;
+  }
+
+  .subheading {
+    font-weight: var(--font-subheading);
+    @apply text-lg leading-tight;
+  }
+
+  .body {
+    font-weight: var(--font-body);
+    @apply text-base leading-relaxed;
+  }
+
+  /* Extension specific styles */
+  .extension-container {
+    min-height: 400px;
+    max-height: 600px;
+    width: 400px;
+    overflow-y: auto;
+  }
+}

@@ -1,0 +1,6 @@
+BEGIN;
+
+ALTER TABLE courses
+    DROP COLUMN IF EXISTS average_gpa;
+
+COMMIT;

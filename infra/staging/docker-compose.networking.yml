@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  cloudflared:
+    image: cloudflare/cloudflared:latest
+    container_name: cloudflared-tunnel-staging
+    restart: unless-stopped
+    networks:
+      - cattlelog-staging-network
+    command:
+      - tunnel
+      - --no-autoupdate
+      - run
+      - --token
+      - ${TUNNEL_TOKEN_STAGING}
+
+networks:
+  cattlelog-staging-network:
+    name: cattlelog-staging-network
+    external: true
+
