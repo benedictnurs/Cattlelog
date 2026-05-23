@@ -8,14 +8,6 @@ Visit the website: https://daviscattlelog.com/
 
 ## Sub-Projects
 
-### Frontend
-
-The frontend is hosted using Vercel and can be found at https://aggie-course-recommender.vercel.app. This hosting will work for the longterm and doesn't need to be changed.
-
-Source can found in [frontend/](https://github.com/AggieWorks/course-recommender/tree/main/frontend).
-
-<img width="1904" height="944" alt="image" src="https://github.com/user-attachments/assets/2b50ee73-44be-49e3-87a8-43de7c624460" />
-
 #### Environment Configuration
 
 The frontend uses environment-specific configuration files:
@@ -33,12 +25,6 @@ The frontend uses environment-specific configuration files:
 npm run dev   # Uses .env.development
 npm run prod  # Uses .env.production
 ```
-
-### Backend
-
-Source can found in [backend/](https://github.com/AggieWorks/course-recommender/tree/main/backend) as is hosted on Render.
-
-<img width="1315" height="500" alt="image" src="https://github.com/user-attachments/assets/861548d7-c5d3-4826-83f3-fb7cec887df5" />
 
 #### Installation Virtual Env
 
