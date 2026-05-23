@@ -1,10 +1,8 @@
 # Davis Cattlelog
-Ever wanted to see how a project gets scaled to 50K+ users? From frontend, backend, DB, and infrastructure? Worry no more! This open-source version of Cattlelog is free to use, and I encourage every student to try to replicate it, whether in Davis or at their own school!
+Ever wanted to see how a project gets scaled to 50K+ users? From frontend, backend, DB, and infrastructure? Worry no more! I founded Cattlelog, and I'm sharing this open-source version free to use, reference, and fork. I encourage every student to try to replicate this sort of project for their community, whether in Davis or at any school!
 
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-
-<img width="1066" height="239" alt="image" src="https://github.com/user-attachments/assets/3f637431-5678-4825-9401-6d06be267d21" />
 
 Visit the website: https://daviscattlelog.com/
 
@@ -72,23 +70,11 @@ pip install -r requirements.txt
 
 ### Extension v1 (WebExtend)
 
-Source can found in [course-copy-ext/](https://github.com/AggieWorks/course-recommender/tree/main/course-copy-ext).
-
 We have a Chrome extension written in TypeScript that allows users to import their schedule to g-cal or cattlelog.
 
 Both the import to g-cal and import to cattlelog are in development.
 
-![image](https://github.com/user-attachments/assets/09bae8b7-0fa3-46ed-ba97-3909a65dbefa)
-
-### Extension v2 (Chrome)
-
-Source can found in [chrome-ext-v2/](https://github.com/AggieWorks/course-recommender/tree/main/chrome-ext-v2).
-
-<img width="476" height="679" alt="image" src="https://github.com/user-attachments/assets/7bd7559c-0768-4ee8-87bc-71e8d0f91905" />
-
 ### Gradient
-
-Source can found in [gradient/](https://github.com/AggieWorks/course-recommender/tree/main/gradient).
 
 Grade data server experiment in Elixir.
 
@@ -98,17 +84,9 @@ Tentative Result: There isn't enough evidence to suggest that this causes signif
 
 See more [gradient docs](./gradient/README.md)
 
-<img width="1900" height="451" alt="image" src="https://github.com/user-attachments/assets/7a0f5368-2940-48e5-93b1-2ad3f188fdcf" />
-
 ### Neptune
 
-Source can found in [neptune/](https://github.com/AggieWorks/course-recommender/tree/main/neptune).
-
-<img width="1134" height="924" alt="image" src="https://github.com/user-attachments/assets/bc719aeb-dad1-4615-bc91-3eba38009226" />
-
 Learn more about the [8x speed increase](https://jr0.org/posts/optimizing-course-api/).
-
-<img width="976" height="562" alt="image" src="https://github.com/user-attachments/assets/75b15abd-2f2b-4104-837e-b026c75abd13" />
 
 ## Docs
 
@@ -226,7 +204,7 @@ Bad branch names:
 #### 3.2 Variable naming
 
 - Please use descriptive variable names
-- The length of a variable's name should be propositional to the scope it can be used in (E.g. `i` in a small for loop, `computed_vectors` for a whole function scope)
+- The length of a variable's name should be to the scope it can be used in (E.g. `i` in a small for loop, `computed_vectors` for a whole function scope)
 
 #### 3.3 Function naming
 
@@ -245,8 +223,6 @@ The rational here is that if you are allowing a function to be used in a whole m
 - Sometimes it does make sense to write a comment about HOW you are doing something
 - Comments should include only characters that can be typed with a standard keyboard; or if absolutely necessary characters from other scripts including emoji. This excludes symbols to split up code like the non-standard dash seen below
 
-<img width="503" height="460" alt="image" src="https://github.com/user-attachments/assets/81895b3a-a0fd-4d12-8ce0-e47d1ee46bb7" />
-
 ### 5. Development Process
 
 ![Circular Development](https://jr0.org/images/Circular%20Development%20-%20Git%20Flow.png)
@@ -255,24 +231,9 @@ The rational here is that if you are allowing a function to be used in a whole m
 
 To insure a uniform setup across the team so that when I run a command, it does the same thing on your machine, we all use the same names for our remotes.
 
-The AggieWorks version of the project is called `upstream` and it looks like this when you run `git remote -v`
-
-```
-src (readme-docs) λ git remote -v
-upstream	git@github.com:AggieWorks/course-recommender.git (fetch)
-upstream	git@github.com:AggieWorks/course-recommender.git (push)
-...
 ```
 
 Your own fork of the project is called `origin` and the complete output of the command `git remote -v` should look like the following, but with your username in the `origin` url.
-
-```
-src (readme-docs) λ git remote -v
-origin	git@github.com:JakeRoggenbuck/course-recommender.git (fetch)
-origin	git@github.com:JakeRoggenbuck/course-recommender.git (push)
-upstream	git@github.com:AggieWorks/course-recommender.git (fetch)
-upstream	git@github.com:AggieWorks/course-recommender.git (push)
-```
 
 Read more about this development process called [Circular Development](https://jr0.org/posts/using-git-collaboratively/).
 
@@ -297,8 +258,6 @@ You can push your changes with `git push origin my-feature-branch`.
 We use STPRQ as a general guideline for our code reviews and used as a "Criteria for measuring quality of pull requests".
 
 <img width="542" height="762" alt="image" src="https://github.com/user-attachments/assets/8fbf9b49-a529-41ea-af39-f8e96b085f7b" />
-
-Source of [STPRQ](https://jr0.org/cdn/Subjective-Test-for-Pull-Request-Quality.pdf).
 
 ### 6. Testing
 
@@ -358,13 +317,9 @@ More writing should be added here later but suffice it to say, the most inbound 
 
 As of October 2025, these links have generated over 2,000 page views.
 
-<img width="628" height="431" alt="image" src="https://github.com/user-attachments/assets/de22c3cb-999a-4842-b6ce-0975017a0c40" />
-
 #### 7.3 Performance Analytics with Kronicler
 
 We use [Kronicler](https://github.com/JakeRoggenbuck/kronicler) to capture performance analytics for our backend.
-
-<img width="1904" height="944" alt="image" src="https://github.com/user-attachments/assets/470fd2ff-ad66-458a-b0a7-4c006d026ccd" />
 
 Here is what the [Kronicler Dashboard](https://usekronicler.com) looks like.
 
@@ -383,8 +338,6 @@ To use the dashboard, navigate to the website, and put in this URL into the sett
 ```
 https://course-recommender-backend.onrender.com/api/logs
 ```
-
-<img width="446" height="284" alt="image" src="https://github.com/user-attachments/assets/baab2ad8-948d-4527-89b6-9226c3cd7988" />
 
 ##### 7.3.2 Uninstall / Disable Kronicler
 
@@ -422,8 +375,6 @@ except ImportError:
 
 Docs for the backend endpoints are available at https://course-recommender-backend.onrender.com/docs
 
-[![image](https://github.com/user-attachments/assets/6756d386-2f6a-40cd-ba35-21b378484c46)](https://course-recommender-backend.onrender.com/docs)
-
 #### 8.3 Language Specific Resources
 
 Read through the [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/2/basic-types.html) for learning the frontend language. For the backend, you can look through [Real Python](https://realpython.com/) or really any tutorial for Python is okay. For Rust to learn the language for Neptune, you can use [Rust Book](https://doc.rust-lang.org/stable/book/). 
@@ -436,11 +387,7 @@ You can visit our main QR code tool by going to [daviscattlelog.com/qr](https://
 
 This tool is meant to help with marketing campaigns to both make static QR codes and to add UTM Source trackers to the links.
 
-![image](https://github.com/user-attachments/assets/bfa11598-30a0-4b7c-9a3e-f2973eb9f6bf)
-
 The base URL is just the Cattlelog URL by default, so no need to change anything. You can then add a UTM Source string. Make this a unqiue string using Kabob case (`just-like-this`).
-
-![image](https://github.com/user-attachments/assets/a2b172db-c336-4170-8bde-b53c8d75e089)
 
 Adding a string will show you a QR code image that you can just directly download. You can also see the URL below the image to make sure it generated correctly.
 
@@ -450,25 +397,17 @@ These QR codes will never expire and they are able to track each visit.
 
 This one is less hidden than the last but it still is considered an internal tool. On the grade distribution page, there is a button that says "Show QR" that allows you to automatically generate a QR code with a tracking link for a specific grade dist page.
 
-![image](https://github.com/user-attachments/assets/f275dc80-904c-4bbc-b3bd-f2bd651b469c)
-
 #### 9.3 `upload_data.py`
 
 The `upload_data.py` script is used to add our JSON to the R2 bucket. This essentially is an CDN as a cache and it loads 6.37 times faster than our backend.
-
-This file is located at [scripts/upload_data.py](https://github.com/AggieWorks/course-recommender/blob/main/scripts/upload_data.py).
-
-![image](https://github.com/user-attachments/assets/97931475-b414-4da4-b2b3-d60247152ee4)
 
 #### 9.4 `make_sitemap.py`
 
 The `make_sitemap.py` script uses the output from our backend to automatically make a sitemap.
 
-Find this one at [scripts/make_sitemap.py](https://github.com/AggieWorks/course-recommender/blob/main/scripts/make_sitemap.py).
-
 #### 9.5 `get_giveaway_emails.py`
 
-To get the emails that signed up for the giveaway, use this script found at [scripts/get_giveaway_emails.py](https://github.com/AggieWorks/course-recommender/blob/main/scripts/get_giveaway_emails.py).
+To get the emails that signed up for the giveaway, use this script.
 
 #### 9.6 `data_speed_test.py`
 
