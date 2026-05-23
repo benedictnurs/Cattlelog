@@ -217,33 +217,7 @@ The rational here is that if you are allowing a function to be used in a whole m
 
 To insure a uniform setup across the team so that when I run a command, it does the same thing on your machine, we all use the same names for our remotes.
 
-```
-
-Your own fork of the project is called `origin` and the complete output of the command `git remote -v` should look like the following, but with your username in the `origin` url.
-
-Read more about this development process called [Circular Development](https://jr0.org/posts/using-git-collaboratively/).
-
-#### 5.2 Before you start working
-
-Before you start working on code, it's important to `git switch main` and `git pull upstream main` to get the latest updates.
-
-#### 5.3 Feature branches
-
-Each new assignment gets contributed via a Pull Request. When you want to create a new feature, first create a new branch to put all of your changes on with:
-
-```
 git switch -c <my-feature-branch>
-```
-
-You should push this feature branch and create a pull request when you start working so that the whole team can see the updates you are making, as some may affect what they are working on. The pull request should be pulling from `origin:my-feature-branch` to `upstream:main`.
-
-You can push your changes with `git push origin my-feature-branch`.
-
-#### 5.4 Reviews
-
-We use STPRQ as a general guideline for our code reviews and used as a "Criteria for measuring quality of pull requests".
-
-<img width="542" height="762" alt="image" src="https://github.com/user-attachments/assets/8fbf9b49-a529-41ea-af39-f8e96b085f7b" />
 
 ### 6. Testing
 
