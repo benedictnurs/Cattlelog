@@ -1,6 +1,5 @@
 # Davis Cattlelog
-🐮 Plan your schedule. Research Professors.
-Ever wanted to see how a full-stack project is built and scaled? From frontend, backend, DB, and infrastructure? Worry no more! This open-source version of Cattlelog is free to use, and I encourage every student to try to replicate it, whether in Davis or at their own school!
+Ever wanted to see how a project gets scaled to 50K+ users? From frontend, backend, DB, and infrastructure? Worry no more! This open-source version of Cattlelog is free to use, and I encourage every student to try to replicate it, whether in Davis or at their own school!
 
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
