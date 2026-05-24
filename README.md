@@ -380,6 +380,7 @@ A word cloud can help to understand your audience and is a visualization that sh
 ![Word Cloud](./scripts/search_word_cloud.png)
 
 ## Contributers
+- Ami Sheth
 - Angela Lee
 - Bardia Anvari
 - Benedict Nursalim
@@ -389,3 +390,4 @@ A word cloud can help to understand your audience and is a visualization that sh
 - Jason Zhang
 - Rani Saro
 - Veronica Hangsan
+- Winnie Situ
