@@ -379,13 +379,13 @@ A word cloud can help to understand your audience and is a visualization that sh
 
 ![Word Cloud](./scripts/search_word_cloud.png)
 
-## Team
+## Contributers
+- Angela Lee
+- Bardia Anvari
+- Benedict Nursalim
 - Eugene Cho
+- Jake Roggenbuck
+- Jamie Kim
+- Jason Zhang
 - Rani Saro
 - Veronica Hangsan
-- Jake Roggenbuck
-- Benedict Nursalim
-- Angela Lee
-- Jason Zhang
-- Jamie Kim
-- Bardia Anvari
