@@ -6,9 +6,9 @@ Take a look at how ETL pipelines are managed and how data is captured from onlin
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
-[![Cattlelog](https://img.shields.io/badge/Cattlelog-daviscattlelog.com-blue?style=flat)](https://daviscattlelog.com/)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-benedict--nursalim-0A66C2?style=flat&logo=linkedin)](https://www.linkedin.com/in/benedict-nursalim/)
-[![Portfolio](https://img.shields.io/badge/Portfolio-benedictn.com-black?style=flat)](https://www.benedictn.com/)
+[![Website](https://img.shields.io/badge/Cattlelog-daviscattlelog.com-blue?style=flat)](https://daviscattlelog.com/)
+[![My LinkedIn](https://img.shields.io/badge/LinkedIn-benedict--nursalim-0A66C2?style=flat&logo=linkedin)](https://www.linkedin.com/in/benedict-nursalim/)
+[![My Portfolio](https://img.shields.io/badge/Portfolio-benedictn.com-black?style=flat)](https://www.benedictn.com/)
 
 ## Sub-Projects
 
