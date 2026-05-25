@@ -7,6 +7,8 @@ Take a look at how ETL pipelines are managed and how data is captured from onlin
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 
 Visit the website: https://daviscattlelog.com/
+Follow my LinkedIn: https://www.linkedin.com/in/benedict-nursalim/
+Visit my Portfolio: https://www.benedictn.com/
 
 ## Sub-Projects
 
