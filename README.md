@@ -1,5 +1,5 @@
 # Cattlelog
-Ever wanted to see how software gets scaled to 50K+ users? From frontend, backend, DB, data engineering, and infrastructure? Worry no more! I founded Cattlelog, and I'm sharing this open-source version free to use, reference, and fork for whatever use you have. I encourage every student to try to replicate this sort of project for their community, whether in Davis or at any school!
+Ever wanted to see how software gets scaled to 40K+ users? From frontend, backend, DB, data engineering, and infrastructure? Worry no more! I founded Cattlelog, and I'm sharing this open-source version free to use, reference, and fork for whatever use you have. I encourage every student to try to replicate this sort of project for their community, whether in Davis or at any school!
 
 Take a look at how ETL pipelines are managed and how data is captured from online sources using Airflow, or how data is cached using a Rust layer, or how analytics and A/B testing are managed using PostHog! Whatever you are interested in, there is something for you in this repo!  All I'm asking in return is a star, and for YOU to try to build something out using what you learned from this repo! Happy hacking!
 
