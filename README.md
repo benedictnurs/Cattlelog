@@ -1,5 +1,7 @@
 # Davis Cattlelog
-Ever wanted to see how a project gets scaled to 50K+ users? From frontend, backend, DB, and infrastructure? Worry no more! I founded Cattlelog, and I'm sharing this open-source version free to use, reference, and fork. I encourage every student to try to replicate this sort of project for their community, whether in Davis or at any school!
+Ever wanted to see how software gets scaled to 50K+ users? From frontend, backend, DB, data engineering, and infrastructure? Worry no more! I founded Cattlelog, and I'm sharing this open-source version free to use, reference, and fork for whatever use you have. I encourage every student to try to replicate this sort of project for their community, whether in Davis or at any school!
+
+Take a look at how ETL pipelines are managed and how data is captured from online sources using Airflow, or how data is cached using a Rust layer, or how analytics and A/B testing are managed using PostHog! Whatever you are interested in, there is something for you in this repo! Happy hacking!
 
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
